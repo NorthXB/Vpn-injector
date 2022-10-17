@@ -1,17 +1,4 @@
 proxies:
-  - name: 2410 news
-    server: 141.193.213.20
-    port: 443
-    type: trojan
-    password: 0a0c6d40-4d86-11ed-aac9-1239d0255272
-    skip-cert-verify: true
-    sni: news.microsoft.com
-    network: ws
-    ws-opts:
-      path: ws://news.microsoft.com/howdy
-      headers:
-        Host: sg-atha.bonds.id
-    udp: true
   - name: 1910 news
     server: 141.193.213.20
     port: 443
@@ -37,6 +24,19 @@ proxies:
       path: /trojan
       headers:
         Host: sgcgo.ipservers.xyz
+    udp: true
+  - name: 2410 news
+    server: 141.193.213.20
+    port: 443
+    type: trojan
+    password: 0a0c6d40-4d86-11ed-aac9-1239d0255272
+    skip-cert-verify: true
+    sni: news.microsoft.com
+    network: ws
+    ws-opts:
+      path: ws://news.microsoft.com/howdy
+      headers:
+        Host: sg-atha.bonds.id
     udp: true
   - name: 3010 147
     server: 104.21.21.147
