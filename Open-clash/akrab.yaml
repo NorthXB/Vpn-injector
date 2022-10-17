@@ -32,15 +32,17 @@ proxies:
     password: rongpulu
     skip-cert-verify: true
     sni: trojan-ctb-sg01.globalssh.xyz
-    network: grpc
-    grpc-opts:
-      grpc-service-name: trojan-grpc-rongpulu-globalssh
+    network: ws
+    ws-opts:
+      path: /trojan-ws
+      headers:
+        Host: trojan-ctb-sg01.globalssh.xyz
     udp: true
   - name: 1011 147
     server: 104.21.21.147
     port: 443
     type: trojan
-    password: jagoanssh--10nove
+    password: jagoanssh-10nove
     skip-cert-verify: true
     sni: sgcgo.ipservers.xyz
     network: ws
