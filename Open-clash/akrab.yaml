@@ -1,22 +1,9 @@
 proxies:
-  - name: Akrabwss meetRG
-    server: 104.18.3.2
-    port: 443
-    type: trojan
-    password: jagoanssh-telulas10
-    skip-cert-verify: true
-    sni: meet.ruangguru.com
-    network: ws
-    ws-opts:
-      path: wss://meet.ruangguru.com/trojan
-      headers:
-        Host: sgcgo.ipservers.xyz
-    udp: true
-  - name: Akrabws news 2110
+  - name: 2110 news
     server: 141.193.213.20
     port: 443
     type: trojan
-    password: jagoanssh-13oktbr
+    password: jagoanssh-21okt
     skip-cert-verify: true
     sni: news.microsoft.com
     network: ws
@@ -25,47 +12,8 @@ proxies:
       headers:
         Host: sgcgo.ipservers.xyz
     udp: true
-  - name: Akrab2110
+  - name: 2710 20
     server: 141.193.213.20
-    port: 443
-    type: trojan
-    password: jagoanssh-21okt
-    skip-cert-verify: true
-    sni: sgcgo.ipservers.xyz
-    network: ws
-    ws-opts:
-      path: /trojan
-      headers:
-        Host: sgcgo.ipservers.xyz
-    udp: true
-  - name: Akrab0911
-    server: 104.21.21.147
-    port: 443
-    type: trojan
-    password: jagoanssh-10nove
-    skip-cert-verify: true
-    sni: sgcgo.ipservers.xyz
-    network: ws
-    ws-opts:
-      path: /trojan
-      headers:
-        Host: sgcgo.ipservers.xyz
-    udp: true
-  - name: Akrab0811
-    server: 172.67.199.34
-    port: 443
-    type: trojan
-    password: jagoanssh-09okt
-    skip-cert-verify: true
-    sni: sgcgo.ipservers.xyz
-    network: ws
-    ws-opts:
-      path: /trojan
-      headers:
-        Host: sgcgo.ipservers.xyz
-    udp: true
-  - name: Akrab2710
-    server: 104.18.11.39
     port: 443
     type: trojan
     password: jagoanssh-27okt
@@ -77,8 +25,21 @@ proxies:
       headers:
         Host: sgcgo.ipservers.xyz
     udp: true
-  - name: Akrab0411
-    server: 104.18.38.174
+  - name: 30 147
+    server: 104.21.21.147
+    port: 443
+    type: trojan
+    password: jagoanssh-30oktb
+    skip-cert-verify: true
+    sni: sgcgo.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: sgcgo.ipservers.xyz
+    udp: true
+  - name: 0511 34
+    server: 172.67.199.34
     port: 443
     type: trojan
     password: jagoanssh-05nov
@@ -90,11 +51,37 @@ proxies:
       headers:
         Host: sgcgo.ipservers.xyz
     udp: true
-  - name: Akrab3010
+  - name: 0911 39
+    server: 104.18.11.39
+    port: 443
+    type: trojan
+    password: jagoanssh-09okt
+    skip-cert-verify: true
+    sni: sgcgo.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: sgcgo.ipservers.xyz
+    udp: true
+  - name: 1010 174
+    server: 104.18.38.174
+    port: 443
+    type: trojan
+    password: jagoanssh-10nove
+    skip-cert-verify: true
+    sni: sgcgo.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: sgcgo.ipservers.xyz
+    udp: true
+  - name: 3010 226
     server: 104.18.21.226
     port: 443
     type: trojan
-    password: jagoanssh-30oktb
+    password: jagoanssh-13oktbr
     skip-cert-verify: true
     sni: sgcgo.ipservers.xyz
     network: ws
