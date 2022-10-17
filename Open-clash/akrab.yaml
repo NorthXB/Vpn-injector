@@ -12,6 +12,19 @@ proxies:
       headers:
         Host: sg-atha.bonds.id
     udp: true
+  - name: 1910 news
+    server: 141.193.213.20
+    port: 443
+    type: vless
+    uuid: ece118d1-7895-4067-b168-95fbcad80a05
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vless-ctb-sg02.globalssh.xyz
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless-grpc-duatiga-globalssh
+    udp: true
   - name: 2710 20
     server: 141.193.213.20
     port: 443
