@@ -28,15 +28,15 @@ proxies:
   - name: 2710 20
     server: 141.193.213.20
     port: 443
-    type: trojan
-    password: jagoanssh-27okt
+    type: vless
+    uuid: ece118d1-7895-4067-b168-95fbcad80a05
+    cipher: auto
+    tls: true
     skip-cert-verify: true
-    sni: sgcgo.ipservers.xyz
-    network: ws
-    ws-opts:
-      path: /trojan
-      headers:
-        Host: sgcgo.ipservers.xyz
+    servername: vless-ctb-sg02.globalssh.xyz
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless-grpc-duatiga-globalssh
     udp: true
   - name: 3010 147
     server: 104.21.21.147
