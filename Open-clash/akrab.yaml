@@ -16,14 +16,14 @@ proxies:
     server: 141.193.213.20
     port: 443
     type: vless
-    uuid: ece118d1-7895-4067-b168-95fbcad80a05
+    uuid: fe129a50-6d09-41ac-ab5a-bb5815b2775a
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: vless-ctb-sg02.globalssh.xyz
+    servername: vless-ctb-sg01.globalssh.xyz
     network: grpc
     grpc-opts:
-      grpc-service-name: vless-grpc-duatiga-globalssh
+      grpc-service-name: vless-grpc-selikur-globalssh
     udp: true
   - name: 2010 174
     server: 104.18.38.174
