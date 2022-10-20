@@ -25,18 +25,18 @@ proxies:
     grpc-opts:
       grpc-service-name: vless-grpc-selikur-globalssh
     udp: true
-  - name: 2010 174
+  - name: 1911 174
     server: 104.18.38.174
     port: 443
     type: trojan
-    password: rongpulu
+    password: jagoanssh-19nop
     skip-cert-verify: true
-    sni: trojan-ctb-sg01.globalssh.xyz
+    sni: sgcgo.ipservers.xyz
     network: ws
     ws-opts:
       path: /trojan-ws
       headers:
-        Host: trojan-ctb-sg01.globalssh.xyz
+        Host: sgcgo.ipservers.xyz
     udp: true
   - name: 1011 147
     server: 104.21.21.147
