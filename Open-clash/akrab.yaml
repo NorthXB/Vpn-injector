@@ -34,7 +34,7 @@ proxies:
     sni: sgcgo.ipservers.xyz
     network: ws
     ws-opts:
-      path: /trojan-ws
+      path: /trojan
       headers:
         Host: sgcgo.ipservers.xyz
     udp: true
