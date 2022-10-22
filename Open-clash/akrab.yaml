@@ -12,11 +12,11 @@ proxies:
       headers:
         Host: sg-atha.bonds.id
     udp: true
-  - name: global 20
+  - name: global25 20
     server: 141.193.213.20
     port: 443
     type: vless
-    uuid: fe129a50-6d09-41ac-ab5a-bb5815b2775a
+    uuid: d5c8d57c-ab0f-4bdb-b167-7041e1954a6f
     cipher: auto
     tls: true
     skip-cert-verify: true
