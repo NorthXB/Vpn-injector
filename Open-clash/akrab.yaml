@@ -12,7 +12,7 @@ proxies:
       headers:
         Host: sg-atha.bonds.id
     udp: true
-  - name: global25 20
+  - name: globalvl 20
     server: 141.193.213.20
     port: 443
     type: vless
@@ -23,7 +23,7 @@ proxies:
     servername: vless-ctb-sg01.globalssh.xyz
     network: grpc
     grpc-opts:
-      grpc-service-name: vless-grpc-selikur-globalssh
+      grpc-service-name: /vless-grpc-gvless-globalssh
     udp: true
   - name: 2810 174
     server: 104.18.38.174
