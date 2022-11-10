@@ -16,7 +16,7 @@ proxies:
     server: meet.ruangguru.com
     port: 443
     type: vless
-    uuid: 9b6bf08b-55e1-4a61-b9da-780779d7ee97
+    uuid: bd6ac322-9a94-4a2e-bb99-f7317983d6b4
     cipher: auto
     tls: true
     skip-cert-verify: true
