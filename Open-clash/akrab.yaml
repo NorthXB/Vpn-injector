@@ -16,7 +16,7 @@ proxies:
     server: 141.193.213.20
     port: 443
     type: vless
-    uuid: d5c8d57c-ab0f-4bdb-b167-7041e1954a6f
+    uuid: bd6ac322-9a94-4a2e-bb99-f7317983d6b4
     cipher: auto
     tls: true
     skip-cert-verify: true
@@ -38,18 +38,18 @@ proxies:
       headers:
         Host: sg1trws.xrayjrt.me
     udp: true
-  - name: 1011 147
+  - name: glonaltj 147
     server: 104.21.21.147
     port: 443
     type: trojan
-    password: jagoanssh-10nove
+    password: gtrojan
     skip-cert-verify: true
-    sni: sgcgo.ipservers.xyz
+    sni: trojan-ctb-sg01.globalssh.xyz
     network: ws
     ws-opts:
-      path: /trojan
+      path: /trojan-ws
       headers:
-        Host: sgcgo.ipservers.xyz
+        Host: trojan-ctb-sg01.globalssh.xyz
     udp: true
   - name: 1211 226
     server: 104.18.21.226
