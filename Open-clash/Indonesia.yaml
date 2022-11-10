@@ -1,6 +1,6 @@
 ---
 proxies:
-- name: trojan-ID
+  - name: trojan ID
     server: trojan-amp-id01.globalssh.xyz
     port: 443
     type: trojan
@@ -13,7 +13,7 @@ proxies:
       headers:
         Host: trojan-amp-id01.globalssh.xyz
     udp: true
-  - name: vless-ID
+  - name: vless ID
     server: vless-amp-id01.globalssh.xyz
     port: 443
     type: vless
@@ -26,7 +26,7 @@ proxies:
     grpc-opts:
       grpc-service-name: /vless-grpc-gvlessid-globalssh
     udp: true
-  - name: vmess-ID
+  - name: vmess ID
     server: id-herza.v2-ray.com
     port: 443
     type: vmess
@@ -42,27 +42,26 @@ proxies:
       headers:
         Host: id-herza.v2-ray.com
     udp: true
----
 proxy-groups:
 - name: Indonesia
   type: select
   proxies:
-  - Game-ID
-  - Streaming-ID
-- name: Game-ID
+  - Game ID
+  - Streaming ID
+- name: Game ID
   type: url-test
   proxies:
-  - trojan-ID
-  - vless-ID
-  - vmess-ID
+  - trojan ID
+  - vless ID
+  - vmess ID
   url: http://hi.bonds.id/ping
   interval: '10'
-- name: Streaming-ID
+- name: Streaming ID
   type: load-balance
   strategy: round-robin
   proxies:
-  - trojan-ID
-  - vless-ID
-  - vmess-ID
+  - trojan ID
+  - vless ID
+  - vmess ID
   url: http://hi.bonds.id/ping
   interval: '60'
