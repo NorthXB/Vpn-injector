@@ -65,3 +65,5 @@ proxy-groups:
   - vmess ID
   url: http://hi.bonds.id/ping
   interval: '60'
+rules:
+  - MATCH,Indonesia
