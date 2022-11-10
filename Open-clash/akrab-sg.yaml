@@ -3,20 +3,20 @@ proxies:
     server: 141.193.213.20
     port: 443
     type: trojan
-    password: 0a0c6d40-4d86-11ed-aac9-1239d0255272
+    password: gtrojan
     skip-cert-verify: true
     sni: news.microsoft.com
     network: ws
     ws-opts:
-      path: ws://news.microsoft.com/howdy
+      path: ws://news.microsoft.com/trojan-ws
       headers:
-        Host: sg-atha.bonds.id
+        Host: trojan-ctb-sg01.globalssh.xyz
     udp: true
   - name: vless
     server: meet.ruangguru.com
     port: 443
     type: vless
-    uuid: 9b6bf08b-55e1-4a61-b9da-780779d7ee97
+    uuid: bd6ac322-9a94-4a2e-bb99-f7317983d6b4
     cipher: auto
     tls: true
     skip-cert-verify: true
@@ -31,15 +31,15 @@ proxies:
     server: 104.18.38.174
     port: 443
     type: vmess
-    uuid: fbf78c1f-6f42-45e0-a1a9-67de703b90f8
+    uuid: 7a6dc31f-0bf0-40c5-8100-1d95a3b73ea2
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: sg1.31vpn.com
+    servername: sg4.vmes.xyz
     network: ws
     ws-opts:
-      path: /fastssh/telunov/6363d2ec04ee3/
+      path: /JAGOANSSH/
       headers:
-        Host: sg1.31vpn.com
+        Host: sg4.vmes.xyz
     udp: true
