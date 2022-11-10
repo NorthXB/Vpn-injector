@@ -12,21 +12,6 @@ proxies:
       headers:
         Host: trojan-ctb-sg01.globalssh.xyz
     udp: true
-  - name: vless
-    server: meet.ruangguru.com
-    port: 443
-    type: vless
-    uuid: bd6ac322-9a94-4a2e-bb99-f7317983d6b4
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: meet.ruangguru.com
-    network: ws
-    ws-opts:
-      path: wss://meet.ruangguru.com/vless-ws-gvless-globalssh
-      headers:
-        Host: vless-ctb-sg01.globalssh.xyz
-    udp: true
   - name: vmess
     server: 104.18.38.174
     port: 443
