@@ -1,5 +1,5 @@
 proxies:
-  - name: trojan
+  - name: trojan-SG
     server: 141.193.213.20
     port: 443
     type: trojan
@@ -12,7 +12,7 @@ proxies:
       headers:
         Host: trojan-ctb-sg01.globalssh.xyz
     udp: true
-  - name: vmess
+  - name: vmess-SG
     server: 104.18.38.174
     port: 443
     type: vmess
