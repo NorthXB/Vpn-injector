@@ -7,11 +7,6 @@ proxies:
     password: gtrojanid
     skip-cert-verify: true
     sni: trojan-amp-id01.globalssh.xyz
-    network: ws
-    ws-opts:
-      path: /trojan-ws
-      headers:
-        Host: trojan-amp-id01.globalssh.xyz
     udp: true
   - name: vless ID
     server: vless-amp-id01.globalssh.xyz
@@ -22,9 +17,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: vless-amp-id01.globalssh.xyz
-    network: grpc
-    grpc-opts:
-      grpc-service-name: /vless-grpc-gvlessid-globalssh
+    network: ws
+    ws-opts:
+      path: /vless-ws-gvlessid-globalssh
+      headers:
+        Host: vless-amp-id01.globalssh.xyz
     udp: true
   - name: vmess ID
     server: id-herza.v2-ray.com
