@@ -1,18 +1,18 @@
 proxies:
-  - name: trojan
+  - name: trojan-ID
     server: 141.193.213.20
     port: 443
     type: trojan
-    password: 0a0c6d40-4d86-11ed-aac9-1239d0255272
+    password: gtrojanid
     skip-cert-verify: true
-    sni: news.microsoft.com
+    sni: trojan-amp-id01.globalssh.xyz
     network: ws
     ws-opts:
-      path: ws://news.microsoft.com/howdy
+      path: /trojan-ws
       headers:
-        Host: sg-atha.bonds.id
+        Host: trojan-amp-id01.globalssh.xyz
     udp: true
-  - name: vless
+  - name: vless-ID
     server: meet.ruangguru.com
     port: 443
     type: vless
@@ -27,7 +27,7 @@ proxies:
       headers:
         Host: vless-ctb-sg01.globalssh.xyz
     udp: true
-  - name: vmess
+  - name: vmess-ID
     server: 104.18.38.174
     port: 443
     type: vmess
