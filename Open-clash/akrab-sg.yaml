@@ -1,19 +1,19 @@
 proxies:
   - name: trojan-SG
-    server: 141.193.213.20
+    server: 104.21.21.147
     port: 443
     type: trojan
     password: gtrojan
     skip-cert-verify: true
-    sni: news.microsoft.com
+    sni: trojan-ctb-sg01.globalssh.xyz
     network: ws
     ws-opts:
-      path: ws://news.microsoft.com/trojan-ws
+      path: /trojan-ws
       headers:
         Host: trojan-ctb-sg01.globalssh.xyz
     udp: true
   - name: vmess-SG
-    server: 104.18.38.174
+    server: 104.18.11.39
     port: 443
     type: vmess
     uuid: 7a6dc31f-0bf0-40c5-8100-1d95a3b73ea2
