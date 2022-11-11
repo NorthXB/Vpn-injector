@@ -22,9 +22,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: vless-amp-id01.globalssh.xyz
-    network: grpc
-    grpc-opts:
-      grpc-service-name: /vless-grpc-gvlessid-globalssh
+    network: ws
+    ws-opts:
+      path: /vless-ws-gvlessid-globalssh
+      headers:
+        Host: vless-amp-id01.globalssh.xyz
     udp: true
   - name: global id 174
     server: 104.18.38.174
@@ -93,4 +95,18 @@ proxies:
       headers:
         Host: sgcgo.ipservers.xyz
     udp: true
-
+  - name: jagoan 147
+    server: 104.21.21.147
+    port: 443
+    type: vless
+    uuid: 3f66071f-fbd5-43de-a558-4cbfada419
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sgcvless.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /jagoanssh
+      headers:
+        Host: sgcvless.ipservers.xyz
+    udp: true
