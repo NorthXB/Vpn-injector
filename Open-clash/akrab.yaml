@@ -99,7 +99,7 @@ proxies:
     server: 104.21.21.147
     port: 443
     type: vless
-    uuid: 3f66071f-fbd5-43de-a558-4cbfada419
+    uuid: 3f66071f-fbd5-43de-a558-4cbfada419be
     cipher: auto
     tls: true
     skip-cert-verify: true
