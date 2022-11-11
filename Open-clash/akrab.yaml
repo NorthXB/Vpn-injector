@@ -1,44 +1,46 @@
 proxies:
-  - name: dualsock news
+    # 3days
+  - name: global ws
     server: 141.193.213.20
     port: 443
     type: trojan
-    password: 0a0c6d40-4d86-11ed-aac9-1239d0255272
+    password: gtrojan
     skip-cert-verify: true
     sni: news.microsoft.com
     network: ws
     ws-opts:
-      path: ws://news.microsoft.com/howdy
+      path: ws://news.microsoft.com/trojan-ws
       headers:
-        Host: sg-atha.bonds.id
+        Host: trojan-ctb-sg01.globalssh.xyz
     udp: true
-  - name: globalvl 20
+  - name: global id 20
     server: 141.193.213.20
     port: 443
     type: vless
-    uuid: bd6ac322-9a94-4a2e-bb99-f7317983d6b4
+    uuid: d7cbd949-e8c4-4c57-91d7-a071eac53a30
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: vless-ctb-sg01.globalssh.xyz
+    servername: vless-amp-id01.globalssh.xyz
     network: grpc
     grpc-opts:
-      grpc-service-name: /vless-grpc-gvless-globalssh
+      grpc-service-name: /vless-grpc-gvlessid-globalssh
     udp: true
-  - name: 2810 174
+  - name: global id 174
     server: 104.18.38.174
     port: 443
     type: trojan
-    password: ce31029d-2068-452f-945d-7a605d7157ef
+    password: gtrojanid
     skip-cert-verify: true
-    sni: sg1trws.xrayjrt.me
+    sni: trojan-amp-id01.globalssh.xyz
     network: ws
     ws-opts:
-      path: /trojan
+      path: /trojan-ws
       headers:
-        Host: sg1trws.xrayjrt.me
+        Host: trojan-amp-id01.globalssh.xyz
     udp: true
-  - name: glonaltj 147
+    # 7days
+  - name: global 147
     server: 104.21.21.147
     port: 443
     type: trojan
@@ -51,11 +53,11 @@ proxies:
       headers:
         Host: trojan-ctb-sg01.globalssh.xyz
     udp: true
-  - name: 1211 226
+  - name: jagoan 226
     server: 104.18.21.226
     port: 443
     type: trojan
-    password: jagoanssh-12nov
+    password: jagoanssh-19nop
     skip-cert-verify: true
     sni: sgcgo.ipservers.xyz
     network: ws
@@ -64,11 +66,12 @@ proxies:
       headers:
         Host: sgcgo.ipservers.xyz
     udp: true
-  - name: 1311 34
+    # 30days
+  - name: jagoan 34
     server: 172.67.199.34
     port: 443
     type: trojan
-    password: jagoanssh-13oktbr
+    password: jagoanssh-22nop
     skip-cert-verify: true
     sni: sgcgo.ipservers.xyz
     network: ws
@@ -77,11 +80,11 @@ proxies:
       headers:
         Host: sgcgo.ipservers.xyz
     udp: true
-  - name: 1911 39
+  - name: jagoan 39
     server: 104.18.11.39
     port: 443
     type: trojan
-    password: jagoanssh-19nop
+    password: jagoanssh-22nop
     skip-cert-verify: true
     sni: sgcgo.ipservers.xyz
     network: ws
