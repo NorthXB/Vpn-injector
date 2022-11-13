@@ -28,7 +28,7 @@ proxies:
       headers:
         Host: vless-ctb-sg01.globalssh.xyz
     udp: true
-  - name: global id 174
+  - name: global 174
     server: 104.18.38.174
     port: 443
     type: trojan
