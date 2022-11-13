@@ -3,7 +3,7 @@ proxies:
     server: 104.21.21.147
     port: 443
     type: trojan
-    password: gtrojan
+    password: sgtrojan
     skip-cert-verify: true
     sni: trojan-ctb-sg01.globalssh.xyz
     network: ws
@@ -11,6 +11,21 @@ proxies:
       path: /trojan-ws
       headers:
         Host: trojan-ctb-sg01.globalssh.xyz
+    udp: true
+  - name: vless-ID
+    server: 104.21.21.147
+    port: 443
+    type: vless
+    uuid: c7dc8aa5-4b46-4702-9e34-5ab1bbd32758
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vless-ctb-sg01.globalssh.xyz
+    network: ws
+    ws-opts:
+      path: /vless-ws-sgvless-globalssh
+      headers:
+        Host: vless-ctb-sg01.globalssh.xyz
     udp: true
   - name: vmess-SG
     server: 104.18.11.39
