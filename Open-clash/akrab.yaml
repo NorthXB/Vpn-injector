@@ -4,7 +4,7 @@ proxies:
     server: 141.193.213.20
     port: 443
     type: trojan
-    password: gtrojan
+    password: sgtrojan
     skip-cert-verify: true
     sni: news.microsoft.com
     network: ws
@@ -13,33 +13,33 @@ proxies:
       headers:
         Host: trojan-ctb-sg01.globalssh.xyz
     udp: true
-  - name: global id 20
+  - name: global 20
     server: 141.193.213.20
     port: 443
     type: vless
-    uuid: d7cbd949-e8c4-4c57-91d7-a071eac53a30
+    uuid: c7dc8aa5-4b46-4702-9e34-5ab1bbd32758
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: vless-amp-id01.globalssh.xyz
+    servername: vless-ctb-sg01.globalssh.xyz
     network: ws
     ws-opts:
-      path: /vless-ws-gvlessid-globalssh
+      path: /vless-ws-sgvless-globalssh
       headers:
-        Host: vless-amp-id01.globalssh.xyz
+        Host: vless-ctb-sg01.globalssh.xyz
     udp: true
   - name: global id 174
     server: 104.18.38.174
     port: 443
     type: trojan
-    password: gtrojanid
+    password: sgtrojan
     skip-cert-verify: true
-    sni: trojan-amp-id01.globalssh.xyz
+    sni: trojan-ctb-sg01.globalssh.xyz
     network: ws
     ws-opts:
       path: /trojan-ws
       headers:
-        Host: trojan-amp-id01.globalssh.xyz
+        Host: trojan-ctb-sg01.globalssh.xyz
     udp: true
     # 7days
   - name: global 147
