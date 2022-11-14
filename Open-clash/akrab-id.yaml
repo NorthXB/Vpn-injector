@@ -13,7 +13,7 @@ proxies:
         Host: trojan-amp-id01.globalssh.xyz
     udp: true
   - name: vless-ID
-    server: 104.21.21.147
+    server: 172.67.199.34
     port: 443
     type: vless
     uuid: 1ed8397f-42b8-4e83-b6ce-cbf90748426f
@@ -28,7 +28,7 @@ proxies:
         Host: vless-amp-id01.globalssh.xyz
     udp: true
   - name: vmess-ID
-    server: 104.18.38.174
+    server: 104.21.21.147
     port: 443
     type: vmess
     uuid: b0583f11-4e5a-4919-9f5b-0445d357e848
