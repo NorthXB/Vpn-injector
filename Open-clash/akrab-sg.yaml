@@ -1,6 +1,6 @@
 proxies:
   - name: trojan-SG
-    server: 104.21.21.147
+    server: 104.18.21.226
     port: 443
     type: trojan
     password: sgtrojan
@@ -28,7 +28,7 @@ proxies:
         Host: vless-ctb-sg01.globalssh.xyz
     udp: true
   - name: vmess-SG
-    server: 104.18.21.226
+    server: 104.21.21.147
     port: 443
     type: vmess
     uuid: 4430ce58-e373-4dff-af46-27cbcb8f1366
