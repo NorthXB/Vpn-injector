@@ -12,8 +12,8 @@ proxies:
       headers:
         Host: trojan-ctb-sg01.globalssh.xyz
     udp: true
-  - name: vless-ID
-    server: 104.21.21.147
+  - name: vless-SG
+    server: 174.67.199.34
     port: 443
     type: vless
     uuid: c7dc8aa5-4b46-4702-9e34-5ab1bbd32758
@@ -31,15 +31,15 @@ proxies:
     server: 104.18.11.39
     port: 443
     type: vmess
-    uuid: 7a6dc31f-0bf0-40c5-8100-1d95a3b73ea2
+    uuid: 4430ce58-e373-4dff-af46-27cbcb8f1366
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: sg4.vmes.xyz
+    servername: vmess-ctb-sg01.globalssh.xyz
     network: ws
     ws-opts:
-      path: /JAGOANSSH/
+      path: /vmess-ws-sgvmess-globalssh
       headers:
-        Host: sg4.vmes.xyz
+        Host: vmess-ctb-sg01.globalssh.xyz
     udp: true
