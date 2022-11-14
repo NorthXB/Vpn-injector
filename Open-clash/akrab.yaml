@@ -31,22 +31,25 @@ proxies:
   - name: global 174
     server: 104.18.38.174
     port: 443
-    type: trojan
-    password: sgtrojan
+    type: vmess
+    uuid: 4430ce58-e373-4dff-af46-27cbcb8f1366
+    alterId: 0
+    cipher: auto
+    tls: true
     skip-cert-verify: true
-    sni: trojan-ctb-sg01.globalssh.xyz
+    servername: vmess-ctb-sg01.globalssh.xyz
     network: ws
     ws-opts:
-      path: /trojan-ws
+      path: /vmess-ws-sgvmess-globalssh
       headers:
-        Host: trojan-ctb-sg01.globalssh.xyz
+        Host: vmess-ctb-sg01.globalssh.xyz
     udp: true
     # 7days
   - name: global 147
     server: 104.21.21.147
     port: 443
     type: trojan
-    password: gtrojan
+    password: sgtrojan
     skip-cert-verify: true
     sni: trojan-ctb-sg01.globalssh.xyz
     network: ws
