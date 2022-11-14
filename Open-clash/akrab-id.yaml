@@ -31,15 +31,15 @@ proxies:
     server: 104.18.38.174
     port: 443
     type: vmess
-    uuid: fbf78c1f-6f42-45e0-a1a9-67de703b90f8
+    uuid: b0583f11-4e5a-4919-9f5b-0445d357e848
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: sg1.31vpn.com
+    servername: vmess-amp-id01.globalssh.xyz
     network: ws
     ws-opts:
-      path: /fastssh/telunov/6363d2ec04ee3/
+      path: /vmess-ws-gvmessid-globalssh
       headers:
-        Host: sg1.31vpn.com
+        Host: vmess-amp-id01.globalssh.xyz
     udp: true
