@@ -12,6 +12,32 @@ proxies:
       headers:
         Host: trojan-amp-id01.globalssh.xyz
     udp: true
+  - name: ID-IKD 34
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: 4b44a060-6692-11ed-bc8c-1239d0255272
+    skip-cert-verify: true
+    sni: yt.com
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: idtj-ikd.bonds.id
+    udp: true
+  - name: ID Herza 147
+    server: 104.21.21.147
+    port: 443
+    type: trojan
+    password: 52424ea0-6692-11ed-b912-1239d0255272
+    skip-cert-verify: true
+    sni: yt.com
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: idtj-herza.bonds.id
+    udp: true
   - name: vless-ID
     server: 172.67.199.34
     port: 443
