@@ -1,68 +1,22 @@
 proxies:
-    # 3days
-  - name: global ws
+  - name: jagoan rgws
+    server: meet.ruangguru.com
+    port: 443
+    type: trojan
+    password: jagoanssh-21nop
+    skip-cert-verify: true
+    sni: meet.ruangguru.com
+    network: ws
+    ws-opts:
+      path: wss://meet.ruangguru.com/trojan
+      headers:
+        Host: sgcgo.ipservers.xyz
+    udp: true
+  - name: jagoan 20
     server: 141.193.213.20
     port: 443
     type: trojan
-    password: sgtrojan
-    skip-cert-verify: true
-    sni: news.microsoft.com
-    network: ws
-    ws-opts:
-      path: ws://news.microsoft.com/trojan-ws
-      headers:
-        Host: trojan-ctb-sg01.globalssh.xyz
-    udp: true
-  - name: global 20
-    server: 141.193.213.20
-    port: 443
-    type: vless
-    uuid: c7dc8aa5-4b46-4702-9e34-5ab1bbd32758
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: vless-ctb-sg01.globalssh.xyz
-    network: ws
-    ws-opts:
-      path: /vless-ws-sgvless-globalssh
-      headers:
-        Host: vless-ctb-sg01.globalssh.xyz
-    udp: true
-  - name: global 174
-    server: 104.18.38.174
-    port: 443
-    type: vmess
-    uuid: 4430ce58-e373-4dff-af46-27cbcb8f1366
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: vmess-ctb-sg01.globalssh.xyz
-    network: ws
-    ws-opts:
-      path: /vmess-ws-sgvmess-globalssh
-      headers:
-        Host: vmess-ctb-sg01.globalssh.xyz
-    udp: true
-    # 7days
-  - name: global 174
-    server: 104.18.38.174
-    port: 443
-    type: trojan
-    password: sgtrojan
-    skip-cert-verify: true
-    sni: trojan-ctb-sg01.globalssh.xyz
-    network: ws
-    ws-opts:
-      path: /trojan-ws
-      headers:
-        Host: trojan-ctb-sg01.globalssh.xyz
-    udp: true
-  - name: jagoan 226
-    server: 104.18.21.226
-    port: 443
-    type: trojan
-    password: jagoanssh-19nop
+    password: jagoanssh-13des
     skip-cert-verify: true
     sni: sgcgo.ipservers.xyz
     network: ws
@@ -71,12 +25,50 @@ proxies:
       headers:
         Host: sgcgo.ipservers.xyz
     udp: true
-    # 30days
+  - name: jagoan 226
+    server: 104.18.21.226
+    port: 443
+    type: trojan
+    password: jagoanssh-telulas12
+    skip-cert-verify: true
+    sni: sgcgo.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: sgcgo.ipservers.xyz
+    udp: true
   - name: jagoan 34
     server: 172.67.199.34
     port: 443
     type: trojan
-    password: jagoanssh-22nop
+    password: jagoanssh-15des
+    skip-cert-verify: true
+    sni: sgcgo.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: sgcgo.ipservers.xyz
+    udp: true
+  - name: jagoan 174
+    server: 104.18.38.174
+    port: 443
+    type: trojan
+    password: jagoanssh-16des
+    skip-cert-verify: true
+    sni: sgcgo.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: sgcgo.ipservers.xyz
+    udp: true
+  - name: jagoan 147
+    server: 104.21.21.147
+    port: 443
+    type: trojan
+    password: jagoanssh-17des
     skip-cert-verify: true
     sni: sgcgo.ipservers.xyz
     network: ws
@@ -89,7 +81,7 @@ proxies:
     server: 104.18.11.39
     port: 443
     type: trojan
-    password: jagoanssh-22nop
+    password: jagoanssh-18des
     skip-cert-verify: true
     sni: sgcgo.ipservers.xyz
     network: ws
@@ -98,18 +90,4 @@ proxies:
       headers:
         Host: sgcgo.ipservers.xyz
     udp: true
-  - name: jagoan 147
-    server: 104.21.21.147
-    port: 443
-    type: vless
-    uuid: 3f66071f-fbd5-43de-a558-4cbfada419be
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sgcvless.ipservers.xyz
-    network: ws
-    ws-opts:
-      path: /jagoanssh
-      headers:
-        Host: sgcvless.ipservers.xyz
-    udp: true
+
