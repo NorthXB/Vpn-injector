@@ -18,7 +18,7 @@ proxies:
     type: trojan
     password: 4b44a060-6692-11ed-bc8c-1239d0255272
     skip-cert-verify: true
-    sni: yt.com
+    sni: idtj-ikd.bonds.id
     network: ws
     ws-opts:
       path: /howdy
@@ -31,7 +31,7 @@ proxies:
     type: trojan
     password: 52424ea0-6692-11ed-b912-1239d0255272
     skip-cert-verify: true
-    sni: yt.com
+    sni: idtj-herza.bonds.id
     network: ws
     ws-opts:
       path: /howdy
