@@ -43,3 +43,19 @@ proxies:
       headers:
         Host: vmess-ctb-sg01.globalssh.xyz
     udp: true
+  - name: vmess-SG-sx
+    server: 104.21.21.147
+    port: 443
+    type: vmess
+    uuid: f920c2bd-6e63-449b-aa8d-87b1cd336dfa
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sgdo-1.herbalv2ray.me
+    network: ws
+    ws-opts:
+      path: /herbalserver
+      headers:
+        Host: sgdo-1.herbalv2ray.me
+    udp: true
