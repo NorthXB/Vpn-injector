@@ -57,7 +57,7 @@ proxies:
     server: 104.21.21.147
     port: 443
     type: vmess
-    uuid: b0583f11-4e5a-4919-9f5b-0445d357e848
+    uuid: c59cca57-5877-4ae5-b349-d97746f9bb61
     alterId: 0
     cipher: auto
     tls: true
@@ -65,7 +65,7 @@ proxies:
     servername: vmess-amp-id01.globalssh.xyz
     network: ws
     ws-opts:
-      path: /vmess-ws-gvmessid-globalssh
+      path: /vmess-ws-idvmess-globalssh
       headers:
         Host: vmess-amp-id01.globalssh.xyz
     udp: true
