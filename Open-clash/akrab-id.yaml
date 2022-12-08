@@ -1,6 +1,6 @@
 proxies:
   - name: idtrojan ws
-    server: --
+    server: cdn.omega.com
     port: 443
     type: trojan
     password: idtrojan
