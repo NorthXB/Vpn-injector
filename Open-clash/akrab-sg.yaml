@@ -1,6 +1,75 @@
 proxies:
-  - name: trojan-SG
+  - name: sgvless ws
     server: 104.18.21.226
+    port: 443
+    type: vless
+    uuid: 06316433-4032-49df-9e5e-46315ef65e76
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vless-ctb-sg01.globalssh.xyz
+    network: ws
+    ws-opts:
+      path: /vless-ws/sgvless-globalssh
+      headers:
+        Host: vless-ctb-sg01.globalssh.xyz
+    udp: true
+  - name: sgvless grpc
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 06316433-4032-49df-9e5e-46315ef65e76
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vless-ctb-sg01.globalssh.xyz
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless-grpc-sgvless-globalssh
+    udp: true
+  - name: sgvmess ws
+    server: 172.67.199.34
+    port: 443
+    type: vmess
+    uuid: fffcc9a3-6476-4549-b235-ec2bb5ced39e
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vmess-ctb-sg01.globalssh.xyz
+    network: ws
+    ws-opts:
+      path: /vmess-ws/sgvmess-globalssh
+      headers:
+        Host: vmess-ctb-sg01.globalssh.xyz
+    udp: true
+  - name: sgvmess grpc
+    server: 172.67.26.118
+    port: 443
+    type: vmess
+    uuid: fffcc9a3-6476-4549-b235-ec2bb5ced39e
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vmess-ctb-sg01.globalssh.xyz
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vmess-grpc-sgvmess-globalssh
+    udp: true
+  - name: sgtrojan grcp
+    server: 104.26.4.192
+    port: 443
+    type: trojan
+    password: sgtrojan
+    skip-cert-verify: true
+    sni: trojan-ctb-sg01.globalssh.xyz
+    network: grpc
+    grpc-opts:
+      grpc-service-name: trojan-grpc-sgtrojan-globalssh
+    udp: true
+  - name: sgtrojan ws
+    server: 172.67.213.134
     port: 443
     type: trojan
     password: sgtrojan
@@ -11,51 +80,4 @@ proxies:
       path: /trojan-ws
       headers:
         Host: trojan-ctb-sg01.globalssh.xyz
-    udp: true
-  - name: vless-SG
-    server: 172.67.199.34
-    port: 443
-    type: vless
-    uuid: c7dc8aa5-4b46-4702-9e34-5ab1bbd32758
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: vless-ctb-sg01.globalssh.xyz
-    network: ws
-    ws-opts:
-      path: /vless-ws-sgvless-globalssh
-      headers:
-        Host: vless-ctb-sg01.globalssh.xyz
-    udp: true
-  - name: vmess-SG
-    server: 104.21.21.147
-    port: 443
-    type: vmess
-    uuid: 8a268290-8686-44dd-a776-6466828026fa
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: vmess-ctb-sg01.globalssh.xyz
-    network: ws
-    ws-opts:
-      path: /vmess-ws-sgvmess-globalssh
-      headers:
-        Host: vmess-ctb-sg01.globalssh.xyz
-    udp: true
-  - name: vmess-SG-sx
-    server: 104.21.21.147
-    port: 443
-    type: vmess
-    uuid: f920c2bd-6e63-449b-aa8d-87b1cd336dfa
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sgdo-1.herbalv2ray.me
-    network: ws
-    ws-opts:
-      path: /herbalserver
-      headers:
-        Host: sgdo-1.herbalv2ray.me
     udp: true
