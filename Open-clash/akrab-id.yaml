@@ -1,11 +1,11 @@
 proxies:
   - name: idtrojan ws
-    server: cdn.omega.com
+    server: trojan-amp-id01.globalssh.xyz
     port: 443
     type: trojan
     password: idtrojan
     skip-cert-verify: true
-    sni: trojan-amp-id01.globalssh.xyz
+    sni: 104.18.21.226
     network: ws
     ws-opts:
       path: /trojan-ws
