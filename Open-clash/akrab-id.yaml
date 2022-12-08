@@ -1,9 +1,9 @@
 proxies:
-  - name: trojan-ID
-    server: 141.193.213.20
+  - name: idtrojan ws
+    server: --
     port: 443
     type: trojan
-    password: gtrojanid
+    password: idtrojan
     skip-cert-verify: true
     sni: trojan-amp-id01.globalssh.xyz
     network: ws
@@ -12,52 +12,22 @@ proxies:
       headers:
         Host: trojan-amp-id01.globalssh.xyz
     udp: true
-  - name: ID-IKD 34
-    server: 172.67.199.34
+  - name: idtrojan grpc
+    server: 104.18.3.2
     port: 443
     type: trojan
-    password: 4b44a060-6692-11ed-bc8c-1239d0255272
+    password: idtrojan
     skip-cert-verify: true
-    sni: idtj-ikd.bonds.id
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: idtj-ikd.bonds.id
+    sni: trojan-amp-id01.globalssh.xyz
+    network: grpc
+    grpc-opts:
+      grpc-service-name: trojan-grpc-idtrojan-globalssh
     udp: true
-  - name: ID Herza 147
-    server: 104.21.21.147
-    port: 443
-    type: trojan
-    password: 52424ea0-6692-11ed-b912-1239d0255272
-    skip-cert-verify: true
-    sni: idtj-herza.bonds.id
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: idtj-herza.bonds.id
-    udp: true
-  - name: vless-ID
-    server: 172.67.199.34
-    port: 443
-    type: vless
-    uuid: d866b057-4b7e-42d9-a506-7e2b022d8bbf
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: vless-amp-id01.globalssh.xyz
-    network: ws
-    ws-opts:
-      path: /vless-ws-gvlessid-globalssh
-      headers:
-        Host: vless-amp-id01.globalssh.xyz
-    udp: true
-  - name: vmess-ID
-    server: 104.21.21.147
+  - name: idvmess ws
+    server: 104.26.4.192
     port: 443
     type: vmess
-    uuid: c59cca57-5877-4ae5-b349-d97746f9bb61
+    uuid: 36672dc6-e005-465d-9c1c-7a47ab38dbaa
     alterId: 0
     cipher: auto
     tls: true
@@ -65,7 +35,49 @@ proxies:
     servername: vmess-amp-id01.globalssh.xyz
     network: ws
     ws-opts:
-      path: /vmess-ws-idvmess-globalssh
+      path: /vmess-ws/idvmess-globalssh
       headers:
         Host: vmess-amp-id01.globalssh.xyz
+    udp: true
+  - name: idvmess grpc
+    server: 172.67.199.34
+    port: 443
+    type: vmess
+    uuid: 36672dc6-e005-465d-9c1c-7a47ab38dbaa
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vmess-amp-id01.globalssh.xyz
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vmess-grpc-idvmess-globalssh
+    udp: true
+  - name: idvless ws
+    server: 170.114.45.0
+    port: 443
+    type: vless
+    uuid: 4b291546-600b-492e-a835-e9eb43ed4cab
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vless-amp-id01.globalssh.xyz
+    network: ws
+    ws-opts:
+      path: /vless-ws/idvless-globalssh
+      headers:
+        Host: vless-amp-id01.globalssh.xyz
+    udp: true
+  - name: idvless grpc
+    server: 172.67.26.118
+    port: 443
+    type: vless
+    uuid: 4b291546-600b-492e-a835-e9eb43ed4cab
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vless-amp-id01.globalssh.xyz
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless-grpc-idvless-globalssh
     udp: true
