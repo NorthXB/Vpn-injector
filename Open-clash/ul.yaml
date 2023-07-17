@@ -1,0 +1,130 @@
+proxies:
+##------------ilped--------------##
+##------------tcp----------------##
+#  - name: Liveon premium
+#    server: 104.26.7.171
+#    port: 443
+#    type: vmess
+#    uuid: 282dad4f-ee10-4354-9462-1a6641f02090
+#    alterId: 0
+#    cipher: auto
+#    tls: true
+#    skip-cert-verify: true
+#    servername: ctb-sg01.ipv2ray.xyz
+#    network: ws
+#    ws-opts:
+#      path: /vmess-ws
+#      headers:
+#        Host: ctb-sg01.ipv2ray.xyz
+#    udp: true
+  - name: sgvmess-ws
+    server: 104.18.2.198
+    port: 443
+    type: vmess
+    uuid: 4ebb478d-92af-439d-bcb8-70cb6fb1d4c4
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vmess-ctb-sg01.globalssh.xyz
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: vmess-ctb-sg01.globalssh.xyz
+    udp: true
+  - name: sgvless-ws
+    server: 104.18.2.198
+    port: 443
+    type: vless
+    uuid: 582087e0-6d99-46ab-b0d6-94272c8ffcc8
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vless-ctb-sg01.globalssh.xyz
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: vless-ctb-sg01.globalssh.xyz
+    udp: true
+  - name: sgtrojan-ws
+    server: 104.18.2.198
+    port: 443
+    type: trojan
+    password: sgtrojan
+    skip-cert-verify: true
+    sni: trojan-ctb-sg03.globalssh.xyz
+    network: ws
+    ws-opts:
+      path: /trojan-ws
+      headers:
+        Host: trojan-ctb-sg03.globalssh.xyz
+    udp: true
+    ##----grcp---##
+  - name: sgvmess-grpc
+    server: 104.18.2.198
+    port: 443
+    type: vmess
+    uuid: 4ebb478d-92af-439d-bcb8-70cb6fb1d4c4
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vmess-ctb-sg01.globalssh.xyz
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vmess-grpc
+    udp: true
+  - name: sgvless-grpc
+    server: 104.18.2.198
+    port: 443
+    type: vless
+    uuid: 582087e0-6d99-46ab-b0d6-94272c8ffcc8
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vless-ctb-sg01.globalssh.xyz
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless-grpc
+    udp: true
+  - name: sgtrojan-grpc
+    server: 104.18.2.1981
+    port: 443
+    type: trojan
+    password: sgtrojan
+    skip-cert-verify: true
+    sni: trojan-ctb-sg03.globalssh.xyz
+    network: grpc
+    grpc-opts:
+      grpc-service-name: trojan-grpc
+    udp: true
+    ##----7 days-----##
+  - name: js-sgtrojan3-ws
+    server: 104.18.2.198
+    port: 443
+    type: trojan
+    password: jagoanssh-sgtrojan
+    skip-cert-verify: true
+    sni: sg3go.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: sg3go.ipservers.xyz
+    udp: true
+  - name: ssh-sgvmess-grpc
+    server: 104.18.2.198
+    port: 443
+    type: vmess
+    uuid: 00c2683c-d18f-4601-9b23-e58ff0d57cd6
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg1grpc.serverip.my.id
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+    udp: true
